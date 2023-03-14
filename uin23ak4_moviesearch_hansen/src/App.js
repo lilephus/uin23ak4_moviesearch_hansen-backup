@@ -1,4 +1,4 @@
-// import './styles.css';
+import './styles.css';
 import React, { useState } from 'react';
 import './App.css';
 
@@ -43,16 +43,7 @@ function App() {
         <img src={movie.Poster} alt={movie.Title} />
         <h3>{movie.Title}</h3>
         <p>
-          <strong>Year:</strong> {movie.Year}
-        </p>
-        <p>
-          <strong>Genre:</strong> {movie.Genre}
-        </p>
-        <p>
-          <strong>Director:</strong> {movie.Director}
-        </p>
-        <p>
-          <strong>Actors:</strong> {movie.Actors}
+          <strong>År:</strong> {movie.Year}
         </p>
         {movie.Price && (
           <p>
@@ -65,10 +56,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Movie Search</h1>
+      <h1>Søk Film</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" value={searchTerm} onChange={handleChange} />
-        <button type="submit">Search</button>
+        <button type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
+
       </form>
       {renderMovies()}
     </div>
