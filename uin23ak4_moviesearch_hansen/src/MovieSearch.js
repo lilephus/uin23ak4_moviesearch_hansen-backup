@@ -40,27 +40,12 @@ function MovieSearch() {
 </div>
   );
 }
-
-
-// function Search(props) {
-//     return (
-//       <div className="search-bar">
-//         <input
-//           type="text"
-//           placeholder="Search for a movie..."
-//           value={props.value}
-//           onChange={(event) => props.setSearchValue(event.target.value)}
-//         />
-//       </div>
-//     );
-//   }
-  
 function Search(props) {
     return (
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Search for a movie..."
+          placeholder="Søk for en film..."
           value={props.value}
           onChange={(event) => props.setSearchValue(event.target.value)}
         />
@@ -70,5 +55,5 @@ function Search(props) {
       </div>
     );
   }
-  
+
 export default MovieSearch;

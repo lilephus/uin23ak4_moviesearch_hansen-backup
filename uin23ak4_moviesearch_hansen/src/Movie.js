@@ -1,5 +1,4 @@
 import React from 'react';
-
 function Movie(props) {
   const { title, year, genre, director, actors, poster } = props;
 
